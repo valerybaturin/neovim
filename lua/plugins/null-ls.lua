@@ -3,7 +3,7 @@ return {
 	config = function()
 		local null_ls = require("null-ls")
 		local diagnostics = null_ls.builtins.diagnostics
-		-- local formatting = null_ls.builtins.formatting
+		local formatting = null_ls.builtins.formatting
 
 		null_ls.setup({
 			sources = {
@@ -13,7 +13,8 @@ return {
 				diagnostics.protolint,
 				diagnostics.hadolint,
 				diagnostics.revive,
-				null_ls.builtins.completion.spell,
+				diagnostics.markdownlint,
+				formatting.codespell,
 			},
 		})
 	end,
