@@ -1,0 +1,14 @@
+{
+    "workspace.library": [
+        "/Users/vvbaturin/.config/nvim",
+        "/Users/vvbaturin/.local/share/nvim/lazy/lazy.nvim",
+        "/Users/vvbaturin/.local/share/nvim/lazy/nvim-lspconfig",
+        "/Users/vvbaturin/.local/share/nvim/lazy/mason-lspconfig.nvim",
+        "/Users/vvbaturin/.local/share/nvim/lazy/mason.nvim",
+        "/Users/vvbaturin/.local/share/nvim/lazy/tokyonight.nvim",
+        "/opt/homebrew/Cellar/neovim/0.8.3/share/nvim/runtime",
+        "/opt/homebrew/Cellar/neovim/0.8.3/lib/nvim",
+        "/Users/vvbaturin/.local/state/nvim/lazy/readme",
+        "${3rd}/luassert/library"
+    ]
+}
