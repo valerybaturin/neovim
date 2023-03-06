@@ -1,6 +1,6 @@
 return {
 	"windwp/nvim-autopairs",
-	event = "CmdlineEnter",
+	event = "InsertEnter",
 	config = function()
 		require("nvim-autopairs").setup {}
 	end
