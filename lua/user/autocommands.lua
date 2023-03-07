@@ -1,4 +1,5 @@
 local autocmd = vim.api.nvim_create_autocmd
+local augroup = vim.api.nvim_create_augroup
 
 autocmd("BufWritePre", {
 	pattern = { "*.lua" },
@@ -7,15 +8,24 @@ autocmd("BufWritePre", {
 	end
 })
 
-autocmd('BufWritePre', {
-	pattern = '*.go',
+local format_sync_grp = augroup("GoImport", {})
+vim.api.nvim_create_autocmd("BufWritePre", {
+	pattern = "*.go",
 	callback = function()
-		vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
-	end
+		require('go.format').goimport()
+	end,
+	group = format_sync_grp,
 })
 
+-- autocmd('BufWritePre', {
+-- 	pattern = '*.go',
+-- 	callback = function()
+-- 		vim.lsp.buf.code_action({ context = { only = { 'source.organizeImports' } }, apply = true })
+-- 	end
+-- })
+
 -- Trim White Space
-local TrimWhiteSpaceGrp = vim.api.nvim_create_augroup('TrimWhiteSpaceGrp', {})
+local TrimWhiteSpaceGrp = augroup('TrimWhiteSpaceGrp', {})
 autocmd('BufWritePre', {
 	group = TrimWhiteSpaceGrp,
 	pattern = '*',

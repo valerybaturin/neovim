@@ -12,7 +12,7 @@ return {
 				}),
 				diagnostics.protolint,
 				diagnostics.hadolint,
-				diagnostics.revive,
+				-- diagnostics.revive,
 				diagnostics.markdownlint,
 				formatting.codespell,
 			},
