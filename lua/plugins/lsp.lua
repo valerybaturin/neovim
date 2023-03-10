@@ -25,7 +25,7 @@ return {
 		local on_attach = function(_, bufnr)
 			local bufopts = { noremap = true, silent = true, buffer = bufnr }
 			-- Enable completion triggered by <c-x><c-o>
-			vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
+			-- vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
 			-- https://github.com/neovim/nvim-lspconfig
 			map('n', 'gD', vim.lsp.buf.declaration, bufopts)
