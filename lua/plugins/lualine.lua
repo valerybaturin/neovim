@@ -5,8 +5,8 @@ return {
 		local config = {
 			options = {
 				component_separators = '|',
-				-- section_separators = { left = '', right = '' },
-				theme = 'auto',
+				section_separators = { left = '', right = '' },
+				theme = 'catppuccin',
 				disabled_filetypes = { 'packer', 'NvimTree', 'NeoTree' },
 				globalstatus = true,
 			},
@@ -14,8 +14,8 @@ return {
 				lualine_a = {
 					{
 						'mode',
-						-- separator = { left = '' },
-						-- right_padding = 2
+						separator = { left = '' },
+						right_padding = 2
 					},
 				},
 				lualine_b = { 'filename', 'branch' },
@@ -23,8 +23,8 @@ return {
 				lualine_z = {
 					{
 						'location',
-						-- separator = { right = '' },
-						-- left_padding = 2
+						separator = { right = '' },
+						left_padding = 2
 					},
 				},
 				lualine_c = { 'filesize' },
