@@ -20,7 +20,7 @@ return {
 					conditionals = {},
 					loops = {},
 					functions = {},
-					keywords = { "italic" },
+					keywords = {},
 					strings = {},
 					variables = {},
 					numbers = {},
