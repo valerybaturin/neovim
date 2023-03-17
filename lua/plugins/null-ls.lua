@@ -12,6 +12,7 @@ return {
 				}),
 				diagnostics.protolint,
 				diagnostics.hadolint,
+				diagnostics.checkmake,
 				-- diagnostics.revive,
 				diagnostics.markdownlint,
 				formatting.codespell,
