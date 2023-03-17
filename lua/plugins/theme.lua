@@ -9,7 +9,7 @@ return {
 			require("catppuccin").setup({
 				flavour = "macchiato", -- latte, frappe, macchiato, mocha
 				dim_inactive = {
-					enabled = false,
+					enabled = true,
 					shade = "dark",
 					percentage = 0.15,
 				},
@@ -44,6 +44,10 @@ return {
 					lsp_trouble = true,
 					which_key = true,
 					mason = true,
+					fidget = true,
+					barbecue = {
+						dim_dirname = true,
+					},
 					-- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
 				},
 			})
