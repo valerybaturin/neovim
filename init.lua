@@ -18,4 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
 vim.g.localmapleader = " "
 
-require("lazy").setup("plugins")
+require("lazy").setup("plugins", {
+	ui = {
+		border = "rounded",
+	}
+})
