@@ -72,9 +72,10 @@ return {
 
 		-- Go
 		local util = require "lspconfig/util"
+		local capabilities_go = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 		lspconfig.gopls.setup {
 			on_attach = on_attach,
-			capabilities = capabilities,
+			capabilities = capabilities_go,
 			cmd = { "gopls", "serve" },
 			filetypes = { "go", "gomod" },
 			root_dir = util.root_pattern("go.work", "go.mod", ".git"),
