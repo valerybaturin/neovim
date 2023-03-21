@@ -27,6 +27,22 @@ return {
 			-- Enable completion triggered by <c-x><c-o>
 			-- vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
+			vim.api.nvim_create_autocmd("CursorHold", {
+				buffer = bufnr,
+				callback = function()
+					local opts = {
+						focusable = false,
+						close_events = { "BufLeave", "CursorMoved", "InsertEnter", "FocusLost" },
+						border = 'rounded',
+						source = 'always',
+						prefix = '',
+						scope = 'cursor',
+						width = 90,
+					}
+					vim.diagnostic.open_float(nil, opts)
+				end
+			})
+
 			-- https://github.com/neovim/nvim-lspconfig
 			map('n', 'gD', vim.lsp.buf.declaration, bufopts)
 			map('n', 'gd', vim.lsp.buf.definition, bufopts)
