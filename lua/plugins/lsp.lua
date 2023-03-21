@@ -37,7 +37,6 @@ return {
 						source = 'always',
 						prefix = '',
 						scope = 'cursor',
-						width = 90,
 					}
 					vim.diagnostic.open_float(nil, opts)
 				end
