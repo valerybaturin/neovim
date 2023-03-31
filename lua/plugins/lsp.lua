@@ -90,7 +90,6 @@ return {
 		}
 
 		local config = {
-			-- disable virtual text
 			virtual_text = false,
 			-- show signs
 			signs = {
@@ -99,14 +98,6 @@ return {
 			update_in_insert = true,
 			underline = true,
 			severity_sort = true,
-			float = {
-				focusable = false,
-				style = "minimal",
-				border = "rounded",
-				source = "always",
-				header = "",
-				prefix = "",
-			},
 		}
 
 		vim.diagnostic.config(config)
