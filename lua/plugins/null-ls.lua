@@ -13,7 +13,7 @@ return {
 				diagnostics.protolint,
 				diagnostics.hadolint,
 				diagnostics.checkmake,
-				-- diagnostics.revive,
+				diagnostics.revive,
 				diagnostics.markdownlint,
 				formatting.codespell,
 				formatting.pg_format,
