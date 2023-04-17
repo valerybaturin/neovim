@@ -7,14 +7,12 @@ return {
 
 		null_ls.setup({
 			sources = {
-				-- diagnostics.sqlfluff.with({
-				-- 	extra_args = { "--dialect", "postgres" }, -- change to your dialect
-				-- }),
 				diagnostics.protolint,
 				diagnostics.hadolint,
 				diagnostics.checkmake,
 				-- diagnostics.revive,
 				diagnostics.markdownlint,
+				diagnostics.yamllint,
 				formatting.codespell,
 				formatting.pg_format,
 			},
