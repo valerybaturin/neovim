@@ -5,8 +5,8 @@ return {
 		local config = {
 			options = {
 				component_separators = '|',
-				-- section_separators = { left = '', right = '' },
-				theme = 'auto',
+				section_separators = { left = '', right = '' },
+				theme = 'tokyonight',
 				disabled_filetypes = { 'packer', 'NvimTree', 'NeoTree' },
 				globalstatus = true,
 			},
@@ -14,7 +14,7 @@ return {
 				lualine_a = {
 					{
 						'mode',
-						-- separator = { left = '' },
+						separator = { left = '' },
 						right_padding = 2
 					},
 				},
@@ -23,7 +23,7 @@ return {
 				lualine_z = {
 					{
 						'location',
-						-- separator = { right = '' },
+						separator = { right = '' },
 						left_padding = 2
 					},
 				},

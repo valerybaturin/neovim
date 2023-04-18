@@ -2,7 +2,8 @@ return {
 	"nvim-neo-tree/neo-tree.nvim",
 	version = "v2.x",
 	keys = {
-		{ "<leader>e", "<cmd>NeoTreeFloatToggle<cr>", desc = "NeoTree" },
+		{ "<leader>e", "<cmd>NeoTreeFocusToggle<cr>", desc = "NeoTree" },
+		{ "<leader>ae", "<cmd>NeoTreeFloatToggle<cr>", desc = "NeoTree Float" },
 	},
 	dependencies = {
 		"nvim-lua/plenary.nvim",
@@ -63,8 +64,8 @@ return {
 				git_status = {
 					symbols = {
 						-- Change type
-						added     = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
-						modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
+						added     = "✚", -- or "✚", but this is redundant info if you use git_status_colors on the name
+						modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
 						deleted   = "✖", -- this can only be used in the git_status source
 						renamed   = "", -- this can only be used in the git_status source
 						-- Status type
