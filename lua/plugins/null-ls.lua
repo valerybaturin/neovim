@@ -10,7 +10,7 @@ return {
 				diagnostics.protolint,
 				diagnostics.hadolint,
 				diagnostics.checkmake,
-				-- diagnostics.revive,
+				diagnostics.golangci_lint,
 				diagnostics.markdownlint,
 				diagnostics.yamllint,
 				formatting.codespell,
