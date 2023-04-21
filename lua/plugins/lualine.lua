@@ -6,7 +6,7 @@ return {
 			options = {
 				component_separators = '|',
 				section_separators = { left = '', right = '' },
-				theme = 'tokyonight',
+				theme = 'auto',
 				disabled_filetypes = { 'packer', 'NvimTree', 'NeoTree' },
 				globalstatus = true,
 			},

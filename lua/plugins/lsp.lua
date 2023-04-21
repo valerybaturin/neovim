@@ -90,7 +90,7 @@ return {
 		}
 
 		local config = {
-			virtual_text = false,
+			virtual_text = true,
 			-- show signs
 			signs = {
 				active = signs,
