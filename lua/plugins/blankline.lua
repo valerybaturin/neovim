@@ -1,5 +1,7 @@
 return {
 	"lukas-reineke/indent-blankline.nvim",
 	event = "BufEnter",
-	config = true
+	config = function()
+		vim.g.indent_blankline_filetype_exclude = { 'dashboard' }
+	end
 }
