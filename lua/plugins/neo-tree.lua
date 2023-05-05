@@ -2,7 +2,7 @@ return {
 	"nvim-neo-tree/neo-tree.nvim",
 	version = "v2.x",
 	keys = {
-		{ "<leader>e", "<cmd>NeoTreeFocusToggle<cr>", desc = "NeoTree" },
+		{ "<leader>e",  "<cmd>NeoTreeFocusToggle<cr>", desc = "NeoTree" },
 		{ "<leader>ae", "<cmd>NeoTreeFloatToggle<cr>", desc = "NeoTree Float" },
 	},
 	dependencies = {
@@ -162,7 +162,7 @@ return {
 						--".null-ls_*",
 					},
 				},
-				follow_current_file = false, -- This will find and focus the file in the active buffer every
+				follow_current_file = true, -- This will find and focus the file in the active buffer every
 				-- time the current file is changed while the tree is open.
 				group_empty_dirs = false,   -- when true, empty folders will be grouped together
 				hijack_netrw_behavior = "open_default", -- netrw disabled, opening a directory opens neo-tree

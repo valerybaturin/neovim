@@ -10,7 +10,6 @@ return {
 				diagnostics.protolint,
 				diagnostics.hadolint,
 				diagnostics.checkmake,
-				diagnostics.npm_groovy_lint,
 				-- diagnostics.golangci_lint,
 				diagnostics.markdownlint,
 				diagnostics.yamllint,
